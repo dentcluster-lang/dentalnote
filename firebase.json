@@ -6,23 +6,7 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [
-      {
-        "source": "/",
-        "destination": "https://dental-cluster-new.web.app/",
-        "type": 301
-      }
-    ],
-    "headers": [
-      {
-        "source": "**",
-        "headers": [
-          {
-            "key": "Strict-Transport-Security",
-            "value": "max-age=63072000; includeSubDomains; preload"
-          }
-        ]
-      }
-    ]
+    "cleanUrls": true,
+    "trailingSlash": false
   }
 }
