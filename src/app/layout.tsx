@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Dental Cluster',
@@ -13,7 +12,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body style={{ margin: 0, padding: 0 }}>
+      <head>
+        <style>{`
+          body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffeb3b;
+            font-family: system-ui, sans-serif;
+          }
+        `}</style>
+      </head>
+      <body>
         {children}
       </body>
     </html>
